@@ -18,8 +18,11 @@ class Menu
         end
         return total_price
     end
+    
 end
 
 menu1 = Menu.new
 
 puts menu1.info
+#menu1に対してinfoメソッドを呼び出し戻り値を出力
+puts "5個購入: #{menu1.get_total_price(5)}円" #5個購入の場合
